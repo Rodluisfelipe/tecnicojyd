@@ -1,0 +1,17 @@
+#logo{
+    display: flex;
+    width: 20%;
+}
+#navegacion{
+    display:inline-block;
+}
+
+#cards{
+    display: flex;
+    margin: auto;
+
+}
+.card{
+    margin: auto;
+    margin-left: 10px;
+}
