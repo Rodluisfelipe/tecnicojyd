@@ -1,6 +1,7 @@
-
-
-
+body{
+    font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Montserrat', sans-serif;
+}
 li{
     list-style: none;
 }
@@ -19,7 +20,7 @@ header{
 }
 .navbar{
     width: 100%;
-    height: 60px;
+    height: 70px;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -90,6 +91,122 @@ header{
     display: flex;
     justify-content: center;
 }
+/* SECTION */
+.section_1{
+    
+width: 100%;
+height: 85vh;
+background-image: url(images/bannerp.png);
+background-size: cover ;
+background-position: center;}
+
+.section1{
+    width: 50%;
+    height: 80vh;
+}
+.section1 h1{
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    padding-top: 10rem;
+    margin-left: 10rem;
+    margin-bottom: 3rem;
+}
+.section1 p{
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 10rem;
+    margin-bottom: 3rem;
+}
+.section1 .action_btn_section{
+    margin-left: 10rem;
+    
+    background-color: green;
+    color: white;
+    padding: 1rem 5rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition:scale 0.2 ease;
+}
+.action_btn_section{
+  scale: 1.05;
+  color: white;
+}
+.action_btn_section:active{
+    scale: 1;
+}
+/* SECTION DOS */
+.section_2{
+    margin: auto 5px;
+    margin-top: 2rem;
+    width: 100%;
+    height: 100vh;
+    display: block;
+  
+}
+.text_section2 h2{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1371a3;
+    margin-bottom: 3rem;
+
+}
+.cards{
+    width: 100%;
+    margin: auto 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_container{
+    background-color: #1371a3;
+    border: 10px solid #1371a3;
+    border-radius: 20px;
+    width: 20%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+.img_card{
+    width: 100%;
+    height: 80%;
+    display: block;
+    
+    border-radius: 10px;}
+.img_card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.text_img{
+    
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin:10px auto ;
+}
+.text_img a{
+    width: 80%;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight:3200;
+    text-align: center;
+}
+
 /* RESPONSIVE DESIGN */
 @media(max-width: 992px){
     .dropdown_menu{
