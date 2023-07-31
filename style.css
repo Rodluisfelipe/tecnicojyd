@@ -91,7 +91,7 @@ header {
 /* SECTION */
 .section_1 {
   width: 100%;
-  height: 85vh;
+  height: 100%;
   background-image: url(images/bannerp.png);
   background-size: cover ;
   background-position: center;
@@ -105,7 +105,7 @@ header {
   font-size: 3rem;
   font-weight: bold;
   color: white;
-  padding-top: 10rem;
+  padding-top: 8rem;
   margin-left: 10rem;
   margin-bottom: 3rem;
 }
@@ -161,12 +161,21 @@ header {
   justify-content: center;
   align-items: center;
 }
+.li_card{
+    color: #1371a3;
+    width: 100%;
+    font-weight:600;
+    margin: auto;
+    padding: 3px 0;
+}
 .card_container {
-  background-color: #1371a3;
-  border: 10px solid #1371a3;
+    box-shadow: #000000 0px 0px 10px 0px;
+    border: #1371a3 4px solid;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
   border-radius: 20px;
   width: 20%;
-  height: 255px;
+  height: 100%;
   justify-content: center;
   align-items: center;
   margin: 0 20px;
@@ -195,11 +204,11 @@ header {
   outline: none;
   padding: 10px 20px;
   border-radius: 10px;
-  background-color: #ffffff;
+  background-color: #1371a3;
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 1rem;
-  font-weight: 3200;
+  font-weight: 600;
   text-align: center;
 }
 /* SECTION TRES */
