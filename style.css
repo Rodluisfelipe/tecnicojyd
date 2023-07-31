@@ -43,7 +43,7 @@ header {
   display: none;
 }
 .action_btn {
-  background-color: green;
+  background-color: #00e676;
   color: white;
   padding: 0.5rem 1rem;
   border: none;
@@ -118,7 +118,7 @@ header {
 .section1 .action_btn_section {
   margin-left: 10rem;
 
-  background-color: green;
+  background-color: #00e676;
   color: white;
   padding: 1rem 5rem;
   border: none;
@@ -266,4 +266,160 @@ header {
     left: 2rem;
     width: unset;
   }
+}
+
+/* RESPONSIVE DESIGN SECTION 1 */
+@media (max-width: 992px) {
+  .section1 {
+    width: 100%;
+    height: 10vh;
+  }
+  .section1 h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    padding-top: 10rem;
+    margin-left: 0rem;
+    margin-bottom: 3rem;
+  }
+  .section1 p {
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 0rem;
+    margin-bottom: 1rem;
+  }
+  .section1 .action_btn_section {
+    margin-left: 0rem;
+    background-color: #00e676;
+    color: white;
+    padding: 1rem 5rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+  }
+  .action_btn_section {
+    scale: 1.05;
+    color: white;
+  }
+  .action_btn_section:active {
+    scale: 1;
+  }
+}
+@media (max-width: 576px) {
+  .section_1 {
+    width: 100%;
+    height: 50vh;
+  }
+  .section1 h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    padding-top: 10rem;
+    margin-left: 0rem;
+    margin-bottom: 1rem;
+  }
+  .section1 p {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 0rem;
+    margin-bottom: 3rem;
+  }
+  .section1 .action_btn_section {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    display: block;
+    background-color: #00e676;
+    color: white;
+    padding: 1rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+  }
+  .action_btn_section:hover {
+    scale: 1.05;
+    color: white;
+  }
+  .action_btn_section:active {
+    scale: 1;
+  }
+}
+/* RESPONSIVE DESIGN SECTION 2 */
+@media (max-width: 576px ){
+    .section_2 {
+        margin: auto 5px;
+        margin-top: 2rem;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+      }
+      .text_section2 h2 {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: bold;
+        color: #1371a3;
+        margin-bottom: 3rem;
+      }
+      .cards {
+        width: 100%;
+        height: 100%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+      }
+      .card_container {
+        background-color: #1371a3;
+        border: 10px solid #1371a3;
+        border-radius: 20px;
+        width: 80%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+      }
+      .img_card {
+        width: 100%;
+        height: 210px;
+        display: block;
+      
+        border-radius: 10px;
+      }
+      .img_card img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+      .text_img {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto;
+      }
+      .text_img a {
+        width: 80%;
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+        font-weight: 3200;
+        text-align: center;
+      }
 }
