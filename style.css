@@ -8,7 +8,7 @@ li {
 a {
   text-decoration: none;
   color: rgb(0, 0, 0);
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 /* HEADER */
@@ -45,11 +45,11 @@ header {
 .action_btn {
   background-color: #00e676;
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1.3rem;
   border: none;
   outline: none;
   border-radius: 20px;
-  font-size: 0.8rem;
+  font-size: 1.3rem;
   font-weight: bold;
   cursor: pointer;
   transition: scale 0.2 ease;
@@ -141,7 +141,8 @@ header {
   margin: auto 5px;
   margin-top: 2rem;
   width: 100%;
-  height: 80vh;
+  height: 100%;
+  margin-bottom: 3rem;
   display: block;
 }
 .text_section2 h2 {
@@ -205,35 +206,37 @@ header {
 .section_3 {
   background-image: url(images/bannerb.jpg);
   background-position: center;
-  
-  width: 100%;
-  height: 100vh;
-}
-.container_section_3 {
   display: flex;
   width: 100%;
-  height: 80%;
+  height: 100%;
+  padding-bottom: 3rem;
+}
+.container_section_3 {
+  
+  width: 100%;
+  height: 100%;
 }
 .text_section_3 {
   margin: auto;
-  margin-right: 7rem;
-  margin-left: 0%;
+  padding-bottom: rem;
+  margin-right: 14rem;
   width: 100%;
-  height: 60%;
+  height: 300px;
   background-color: white;
 }
 .img_section_3 {
+  position: relative;
   margin-top: 3rem;
-  margin-left: 7rem;
-  height: 100%;
-  width: 100%;
+  margin-left: 20rem;
+  height: 80%;
+  width: 60%;
 }
 .img_section_3 img {
   width: 100%;
   height: 550px;
 }
 .text_section_3 h2 {
-  margin-top: 20px;
+  margin-top: 80px;
   width: 100%;
   text-align: center;
   color: #1371a3;
@@ -440,4 +443,49 @@ header {
         font-weight: 3200;
         text-align: center;
       }
+}
+/* RESPONSE DESIGN SECTION 3 */
+@media (max-width: 570px){
+
+    .img_section_3{
+        display: none;
+    }
+    .section_3 {
+        background-image: url(images/bannerb.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 3rem;
+      }
+      .container_section_3 {
+       
+        width: 100%;
+        height: 100%;
+      }
+      .text_section_3 {
+        
+        height: 100%;
+        background-color: transparent;
+      }
+      .text_section_3 h2 {
+        margin:auto ;
+        margin-top: 80px;
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+      .text_section_3 p {
+        margin:auto ;
+        margin-top: 20px;
+        width: 100%;
+        color: #ffffff;
+        font-size: 1.5rem;
+        margin: auto;
+        
+      }
+      
 }
