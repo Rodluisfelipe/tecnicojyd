@@ -325,12 +325,14 @@ header {
     padding-bottom: 1rem;
   }
     .section1 {
-        width: 100%;
+        margin: auto;
+        width: 80%;
         height: 100%;
         margin-bottom: 3rem;
     }
   .section1 h1 {
     width: 100%;
+    
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
