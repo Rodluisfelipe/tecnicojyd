@@ -1,6 +1,7 @@
 body {
   font-family: "Barlow Condensed", sans-serif;
   font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
 }
 li {
   list-style: none;
@@ -95,32 +96,35 @@ header {
   background-image: url(images/bannerp.png);
   background-size: cover ;
   background-position: center;
+  padding-bottom: 5rem;
 }
 
 .section1 {
   width: 50%;
-  height: 80vh;
+  height: 100%;
+  
 }
 .section1 h1 {
   font-size: 3rem;
   font-weight: bold;
   color: white;
   padding-top: 8rem;
-  margin-left: 10rem;
-  margin-bottom: 3rem;
+  margin-left: 5rem;
+  margin-bottom: 2rem;
 }
 .section1 p {
   font-size: 1.5rem;
   color: white;
-  margin-left: 10rem;
-  margin-bottom: 3rem;
+  margin-left: 5rem;
+  margin-bottom: 2rem;
 }
-.section1 .action_btn_section {
-  margin-left: 10rem;
-
+.action_btn_section {
+  margin-left: 5rem;
+  margin-bottom: 3rem;
+  height: 1rem;
   background-color: #00e676;
   color: white;
-  padding: 1rem 5rem;
+  padding: 1rem; 
   border: none;
   outline: none;
   border-radius: 20px;
@@ -133,6 +137,7 @@ header {
   scale: 1.05;
   color: white;
 }
+
 .action_btn_section:active {
   scale: 1;
 }
@@ -176,14 +181,17 @@ header {
   padding: 10px;
   border-radius: 20px;
   width: 20%;
-  height: 100%;
+  height: 480px;
   justify-content: center;
   align-items: center;
   margin: 0 20px;
+  margin-bottom: 3rem;
 }
 .img_card {
-  width: 100%;
-  height: 210px;
+  margin: auto;
+  width: 15rem;
+  height: 15rem;
+  object-fit: contain;
   display: block;
 
   border-radius: 10px;
@@ -221,7 +229,64 @@ header {
   color: #1371a3;
   margin-bottom: 3rem;
 }
+.carousel-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative; /* Agrega posición relativa para manejar altura de slides */
+  margin-bottom: 3rem;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: fit-content; /* Ajusta el ancho al contenido para centrar las imágenes */
+  margin: 0 auto; /* Centra el carrusel horizontalmente */
+}
+
+.slide {
+  flex: 0 0 100%;
+  min-width: 100%;
+  display: flex; /* Agrega display flex para centrar verticalmente las imágenes */
+  align-items: center; /* Centra verticalmente las imágenes */
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%; /* Asegura que las imágenes no excedan el alto del slide */
+  margin: 0 auto; /* Centra las imágenes horizontalmente */
+}
+
 /* SECTION TRES */
+.text-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+.marquee {
+  display: inline-block;
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+p {
+  margin: 2rem 0;
+  padding: 10px;
+  font-size: 2rem;
+  color: #1371a3;
+  font-weight: 800;
+}
+
 .section_3 {
   background-image: url(images/bannerb.jpg);
   background-position: center;
@@ -372,7 +437,8 @@ header {
     margin-bottom: 3rem;
   }
   .section1 .action_btn_section {
-    width: 80%;
+    width: 100%;
+    height: 100%;
     text-align: center;
     margin: auto;
     display: block;
@@ -382,7 +448,7 @@ header {
     border: none;
     outline: none;
     border-radius: 20px;
-    font-size: 2rem;
+    font-size: 1.5em;
     font-weight: bold;
     cursor: pointer;
     transition: scale 0.2 ease;
