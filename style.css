@@ -528,7 +528,7 @@ p {
 @media (max-width: 570px){
 
     .img_section_3{
-        display: none;
+        display: none !important;
     }
     .section_3 {
         background-image: url(images/bannerb.jpg);
